@@ -1,28 +1,15 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Projects from "./components/Projects";
-import Timeline from "./components/Timeline";
-import HowIBuild from "./components/HowIBuild";
-import About from "./components/About";
-import LetsBuild from "./components/LetsBuild";
-import Footer from "./components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import ProjectDetail from "./pages/ProjectDetail";
 
 function App() {
   return (
-    <div className="app">
-      <Navbar />
-
-      <main>
-        <Hero />
-        <Projects />
-        <Timeline />
-        <HowIBuild />
-        <About />
-        <LetsBuild />
-      </main>
-
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/project/:slug" element={<ProjectDetail />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
