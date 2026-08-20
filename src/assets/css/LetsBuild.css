@@ -1,0 +1,89 @@
+
+
+.lets-build {
+  padding: 180px 5vw;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  background: radial-gradient(
+    circle at center,
+    rgba(184, 255, 61, 0.06),
+    transparent 40%
+  );
+}
+
+.lets-build h2 {
+  font-size: clamp(50px, 9vw, 130px);
+  line-height: 0.9;
+  letter-spacing: -0.07em;
+}
+
+.lets-build h2 span {
+  color: var(--accent);
+}
+
+.lets-build > p:not(.section-label) {
+  color: var(--secondary);
+  margin: 35px auto;
+  max-width: 500px;
+}
+
+.lets-build a {
+  display: inline-block;
+  padding: 15px 25px;
+  background: var(--accent);
+  color: var(--background);
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.lets-build a:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 992px) {
+
+  .lets-build {
+    padding: 140px 4vw;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .lets-build {
+    padding: 100px 20px;
+  }
+
+  .lets-build h2 {
+    font-size: clamp(40px, 10vw, 72px);
+  }
+}
+
+@media (max-width: 480px) {
+
+  .lets-build {
+    padding: 80px 16px;
+  }
+
+  .lets-build h2 {
+    font-size: clamp(32px, 12vw, 52px);
+  }
+
+  .lets-build > p:not(.section-label) {
+    font-size: 13px;
+    margin: 20px auto;
+  }
+
+  .lets-build a {
+    padding: 12px 20px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+
+  .lets-build h2 {
+    font-size: 28px;
+  }
+}

@@ -5,6 +5,7 @@ import Timeline from "../components/Timeline";
 import HowIBuild from "../components/HowIBuild";
 import About from "../components/About";
 import LetsBuild from "../components/LetsBuild";
+import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
 function Home() {
@@ -19,11 +20,13 @@ function Home() {
         <HowIBuild />
         <About />
         <LetsBuild />
+        <Contact />
       </main>
 
       <Footer />
     </div>
   );
 }
+
 
 export default Home;

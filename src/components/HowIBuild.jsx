@@ -1,35 +1,37 @@
+import "../assets/css/HowIBuild.css";
+
 function HowIBuild() {
   const steps = [
     {
       number: "01",
-      title: "UNDERSTAND",
-      text: "Understand the problem before writing the first line of code.",
+      title: "MEMAHAMI",
+      text: "Memahami masalah sebelum menulis baris kode pertama.",
     },
     {
       number: "02",
-      title: "DESIGN",
-      text: "Turn ideas and requirements into a clear digital interface.",
+      title: "MERANCANG",
+      text: "Mengubah ide dan kebutuhan menjadi antarmuka digital yang jelas.",
     },
     {
       number: "03",
-      title: "BUILD",
-      text: "Build the product using modern technologies and clean code.",
+      title: "MEMBANGUN",
+      text: "Membangun produk menggunakan teknologi modern dan kode yang bersih.",
     },
     {
       number: "04",
-      title: "ITERATE",
-      text: "Test, fix, improve and keep making the product better.",
+      title: "MENGULANG",
+      text: "Menguji, memperbaiki, meningkatkan, dan terus membuat produk lebih baik.",
     },
   ];
 
   return (
     <section className="section build-section">
       <div className="section-header">
-        <p className="section-label">03 / HOW I BUILD</p>
+        <p className="section-label">03 / BAGAIMANA AKU MEMBANGUN</p>
 
         <p className="section-intro">
-          My process is simple: understand the problem,
-          build the right solution, then improve it.
+          Proses saya cukup sederhana pahami masalahnya, buat solusi yang tepat
+          dan berguna bukan sekadar hasil jadi, lalu kerjakan.
         </p>
       </div>
 

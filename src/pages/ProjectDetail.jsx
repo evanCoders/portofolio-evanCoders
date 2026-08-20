@@ -1,3 +1,4 @@
+import './ProjectDetail.css';
 import { Link, useParams } from "react-router-dom";
 import projects from "../data/projects";
 
@@ -24,7 +25,7 @@ function ProjectDetail() {
     <div className="project-detail-page">
       <header className="project-detail-nav">
         <Link to="/" className="project-back">
-          ← EVAN
+          ← KEMBALI
         </Link>
 
         <span>WEB DEVELOPER</span>

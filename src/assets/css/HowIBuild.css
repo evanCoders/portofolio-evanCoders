@@ -1,0 +1,139 @@
+
+
+.build-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid var(--border);
+}
+
+.build-card {
+  padding: 35px;
+  min-height: 260px;
+  border-right: 1px solid var(--border);
+  transition: 0.3s;
+}
+
+.build-card:last-child {
+  border-right: none;
+}
+
+.build-card:hover {
+  background: var(--surface);
+}
+
+.build-card > span {
+  color: var(--accent);
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+}
+
+.build-card h3 {
+  margin-top: 70px;
+  font-size: 15px;
+}
+
+.build-card p {
+  margin-top: 15px;
+  color: var(--secondary);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.tech-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  color: var(--secondary);
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+@media (max-width: 1200px) {
+
+  .build-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .build-card:nth-child(2) {
+    border-right: none;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .build-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .build-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .build-card {
+    padding: 25px;
+    min-height: 200px;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .build-card:nth-child(2) {
+    border-right: none;
+  }
+
+  .build-card h3 {
+    margin-top: 40px;
+  }
+
+  .tech-line {
+    font-size: 9px;
+    gap: 12px;
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .build-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .build-card {
+    padding: 20px;
+    min-height: 160px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .build-card:last-child {
+    border-bottom: none;
+  }
+
+  .build-card h3 {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+
+  .build-card p {
+    font-size: 12px;
+  }
+
+  .tech-line {
+    font-size: 8px;
+    gap: 10px;
+    padding: 15px 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 360px) {
+
+  .build-card h3 {
+    font-size: 13px;
+  }
+}

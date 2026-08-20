@@ -1,27 +1,23 @@
+import "../assets/css/Timeline.css";
+
 const timeline = [
   {
-    year: "2023",
-    title: "STARTED WEB DEVELOPMENT",
+    year: "2024 - 2025",
+    title: "MEMULAI DARI DASAR",
     description:
-      "Started exploring web development and learning the fundamentals of HTML, CSS and JavaScript.",
+      "Belajar HTML, atribut, komponen CSS, PHP native dan sedikit JavaScript sebagai fondasi awal pengembangan web.",
   },
   {
-    year: "2024",
-    title: "BUILDING PROJECTS",
+    year: "2025 - 2026",
+    title: "BACKEND & DATABASE",
     description:
-      "Started building websites and small applications while learning how to turn ideas into functional products.",
+      "Belajar Laravel, Blade, sistem ORM, dan MVC. Mulai mengenal database dan membuat table melalui CMD dan PowerShell.",
   },
   {
-    year: "2025",
-    title: "FULL-STACK DEVELOPMENT",
+    year: "2026 - 2027",
+    title: "EKSPLORASI MOBILE & PKL",
     description:
-      "Expanded into backend development and database systems using Laravel, MySQL and modern frontend technologies.",
-  },
-  {
-    year: "2026",
-    title: "WEB DEVELOPER",
-    description:
-      "Building real-world web systems, experimenting with new technologies and developing a stronger product-focused workflow.",
+      "Belajar membuat aplikasi dengan Android Studio meskipun tidak mudah. Tetap aktif mengembangkan aplikasi berbasis web dan PWA di sela-sela waktu. Sisa waktu digunakan untuk menjalani Praktek Kerja Lapangan (PKL).",
   },
 ];
 
@@ -29,20 +25,18 @@ function Timeline() {
   return (
     <section className="section timeline-section" id="timeline">
       <div className="section-header">
-        <p className="section-label">03 / TIMELINE</p>
+        <p className="section-label">03 / GARIS WAKTU</p>
 
         <p className="section-intro">
-          A timeline of my journey, from learning the fundamentals
-          to building complete web applications and digital products.
+          Perjalanan belajar ku dari nol hingga bisa membangun aplikasi mobile
+          juga PWA dan website hingga menjadi produk digital.
         </p>
       </div>
 
       <div className="timeline">
         {timeline.map((item, index) => (
           <article className="timeline-item" key={item.year}>
-            <div className="timeline-year">
-              {item.year}
-            </div>
+            <div className="timeline-year">{item.year}</div>
 
             <div className="timeline-line">
               <span className="timeline-dot"></span>
@@ -53,9 +47,7 @@ function Timeline() {
             </div>
 
             <div className="timeline-content">
-              <span className="timeline-number">
-                0{index + 1}
-              </span>
+              <span className="timeline-number">0{index + 1}</span>
 
               <h2>{item.title}</h2>
 

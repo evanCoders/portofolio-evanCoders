@@ -1,87 +1,26 @@
-const projects = [
-  {
-    number: "01",
-    name: "KAWANKIOS",
-    category: "Point of Sale System",
-    tech: ["Laravel", "NODE JS", "MySQL"],
-  },
-  {
-    number: "02",
-    name: "SAKU",
-    category: "Financial Management",
-    tech: ["React", "Laravel", "MySQL"],
-  },
-  {
-    number: "03",
-    name: "NEXLIB",
-    category: "Library Management System",
-    tech: ["React", "Laravel", "MySQL"],
-  },
-  {
-    number: "04",
-    name: "TOOL MANAGER",
-    category: "Inventory Management",
-    tech: ["Laravel", "MySQL"],
-  },
-  {
-    number: "05",
-    name: "PEMINJAMAN ALAT",
-    category: "Equipment Borrowing System",
-    tech: ["Laravel", "MySQL"],
-  },
-  {
-    number: "06",
-    name: "UANGKAS",
-    category: "Cash Management System",
-    tech: ["Laravel", "MySQL"],
-  },
-  {
-    number: "07",
-    name: "E-ADUAN",
-    category: "Complaint & Reporting System",
-    tech: ["Laravel", "MySQL"],
-  },
-  {
-    number: "08",
-    name: "PPLG2 BINTANG",
-    category: "School Project",
-    tech: ["HTML", "CSS", "JavaScript"],
-  },
-  {
-    number: "09",
-    name: "FREELANCE",
-    category: "Freelance Web Project",
-    tech: ["React", "JavaScript"],
-  },
-  {
-    number: "10",
-    name: "LANDING PAGE PT",
-    category: "Company Landing Page",
-    tech: ["React", "UI/UX"],
-  },
-  {
-    number: "11",
-    name: "PERPUSTAKAAN",
-    category: "Library System",
-    tech: ["Laravel", "MySQL"],
-  },
-];
+import "../assets/css/Projects.css";
+import { Link } from "react-router-dom";
+import projects from "../data/projects";
 
 function Projects() {
   return (
     <section className="section projects-section" id="work">
       <div className="section-header">
-        <p className="section-label">02 / PROJECTS</p>
+        <p className="section-label">02 / PROYEK</p>
 
         <p className="section-intro">
-          A collection of websites, applications and systems I have built while
-          exploring web development.
+          Kumpulan proyek web, aplikasi, dan sistem yang saya bangun dari ide
+          menjadi produk digital berdasarkan masalah nyata.
         </p>
       </div>
 
       <div className="projects-list">
         {projects.map((project) => (
-          <article className="project-row" key={project.number}>
+          <Link
+            to={`/project/${project.slug}`}
+            className="project-row"
+            key={project.number}
+          >
             <span className="project-number">{project.number}</span>
 
             <div className="project-name">
@@ -96,7 +35,7 @@ function Projects() {
             </div>
 
             <span className="project-arrow">↗</span>
-          </article>
+          </Link>
         ))}
       </div>
     </section>

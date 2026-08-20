@@ -1,18 +1,19 @@
+import "../assets/css/Footer.css";
 function Footer() {
   return (
     <footer className="footer">
       <div>
-        <strong>EVAN.</strong>
+        <strong>EVANCODERS</strong>
         <span>WEB DEVELOPER</span>
       </div>
 
       <div>
-        <span>BUILT WITH</span>
+        <span>DIBUAT DENGAN</span>
         <strong>REACT + VITE</strong>
       </div>
 
       <div>
-        <span>© 2026 EVAN</span>
+        <span>© {new Date().getFullYear()} EVANCODERS</span>
       </div>
     </footer>
   );
